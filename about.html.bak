@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Clothing Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    p,
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    header {
+        background-color: #ff69b4;
+        padding: 20px;
+        text-align: center;
+    }
+    h1{
+        color: #d31e78;
+    }
+    header h1 {
+        color: white;
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        list-style-type: none;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .about-section {
+        background-color: #fff;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .about-section h2 {
+        color: #f578b6;
+        margin-bottom: 10px;
+    }
+
+    .about-section p {
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        background-color: #ff69b4;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #footer {
+        background-color: #ff69b4;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        font-size: 15px;
+    }
+
+    p {
+        text-align: justify;
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+    h3{
+        display: flex;
+        -ms-flex-align: start;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Women's Clothing Reviews</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="about-section">
+        <h1>About Us</h1><br>
+        <h2>Sentiment Analysis On Women's Clothing Reviews</h2><br>
+        <h3>ABSTRACT</h3><br>
+        <p>
+            In the realm of education and literature, electronic commerce (e-commerce) is a prominent field of study.
+            While much research has focused on e-commerce in developing economies, there's a growing interest in
+            understanding customer behavior as they transition from traditional retail shopping to online platforms.
+            This project employs sentiment analysis on customer reviews within the e-commerce domain, utilizing Natural
+            Language Processing (NLP) techniques to discern broad trends in customer sentiments. The primary objective
+            is to predict whether customers recommend the products they purchased based on their review texts.
+            Challenges include extracting pertinent information from review texts and converting them into numerical
+            vectors for machine learning algorithms. <br>
+        </p>
+        <h3>PROJECT TITLE & OBJECTIVE</h3><br>
+        <p>
+            The project, titled "SENTIMENT ANALYSIS ON WOMEN'S CLOTHES REVIEWS" under the category of E-commerce, aims
+            to utilize NLP techniques to discern trends in customer sentiments. The objective is to predict customer
+            recommendations using machine learning algorithms and deep learning techniques. <br>
+        </p>
+
+        <h3>OBJECTIVE</h3><br>
+        <p>
+            Challenges include extracting relevant information from review texts and implementing supervised ML
+            classification algorithms and Deep Learning on RNN with Gated Recurrent Unit. <br>
+        </p>
+
+        <h3>PROJECT SIGNIFICANCE</h3><br>
+        <p>
+            In today's educational and commercial landscape, e-commerce is a vital area of study. As online shopping
+            becomes increasingly prevalent, understanding customer sentiments through sentiment analysis becomes
+            crucial. This project addresses the need to evaluate effective techniques for sentiment analysis within the
+            e-commerce domain. <br>
+
+        </p>
+
+        <h3>PROJECT FOCUS</h3><br>
+        <p>
+            The project seeks to predict whether customers, particularly women, recommend products based on their review
+            texts. Emphasis is placed on utilizing only the "Review Text" variable for analysis. The dataset comprises
+            22,641 rows and 10 variables, each representing a customer review with various attributes. <br>
+        </p>
+
+        <h3>DATASET DESCRIPTION</h3><br>
+        <p>
+            The dataset includes 23,486 rows and 10 feature variables, such as Clothing ID, Age, Title, Review Text,
+            Rating, Recommended IND, Positive Feedback Count, Division Name, Department Name, and Class Name. <br>
+        </p>
+
+        <h3>ANALYTICS TOOLS</h3><br>
+        <p>
+            Python Notebook (Jupyter Notebook/Google Colab) <br>
+        </p>
+
+        <h3>ANALYTICS APPROACH</h3><br>
+        <p>
+            Machine Learning Algorithms: Logistic Regression, Naive Bayes, Support Vector Machine (SVM), Random Forest
+            Classifier (RF), Ada Boost
+            Deep Learning Algorithm: Recurrent Neural Network (RNN) with Gated Recurrent Unit (GRU). <br>
+        </p>
+
+        <h3>CONCLUSION</h3><br>
+        <p>
+            The project utilizes sentiment analysis to determine product recommendations. Various machine learning and
+            deep learning algorithms are employed, with Ada Boosting, Naive Bayes, Deep Learning, SVM, and Logistic
+            Regression showing promising results. The choice of algorithm depends on the specific dataset and
+            requirements, each having its own strengths and weaknesses. <br>
+        </p>
+
+    </div>
+
+    <footer>
+        <p id="footer">&copy; 2024 Women's Clothing Reviews</p>
+    </footer>
+</body>
+
+</html>

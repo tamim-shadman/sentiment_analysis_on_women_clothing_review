@@ -1,0 +1,99 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    margin-bottom: 2rem;
+}
+
+.jumbotron {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 3rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.jumbotron h1 {
+    color: #ff69b4;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.jumbotron p.lead {
+    color: #6c757d;
+}
+
+.jumbotron .btn {
+    background-color: #ff69b4;
+    border: none;
+    transition: transform 0.2s;
+}
+
+.jumbotron .btn:hover {
+    background-color: #ff85c1;
+    transform: scale(1.1);
+}
+
+.container h2 {
+    color: #ff69b4;
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.review-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.review-card .review-title {
+    color: #ff69b4;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.review-card .review-text {
+    color: #6c757d;
+}
+
+.review-card .review-author {
+    color: #999;
+    font-style: italic;
+}
+
+footer {
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+}
+
+footer .text-uppercase {
+    font-size: 1.2rem;
+    color: #ff69b4;
+}
+
+footer p {
+    color: #6c757d;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
