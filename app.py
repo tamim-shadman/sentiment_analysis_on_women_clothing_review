@@ -13,7 +13,7 @@ import os
 import re
 import json
 import logging
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import joblib
 import numpy as np
@@ -550,6 +550,27 @@ def predict_batch():
     except Exception as e:
         logger.error(f"Error in /predict/batch: {e}", exc_info=True)
         return jsonify({'error': 'An internal error occurred during batch processing.'}), 500
+
+# =============================================================================
+# SPA STATIC ASSETS ROUTE (PRODUCTION READY)
+# =============================================================================
+
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def serve_frontend_spa(path):
+    """Serves the built React SPA in production if frontend/dist exists."""
+    dist_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'frontend', 'dist')
+    if os.path.exists(dist_dir):
+        target_path = os.path.join(dist_dir, path)
+        if path != "" and os.path.exists(target_path) and os.path.isfile(target_path):
+            return send_from_directory(dist_dir, path)
+        return send_from_directory(dist_dir, 'index.html')
+    return jsonify({
+        "service": "Atelier Review Intelligence API",
+        "version": "2.2.0",
+        "status": "online",
+        "docs": "/health"
+    }), 200
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
