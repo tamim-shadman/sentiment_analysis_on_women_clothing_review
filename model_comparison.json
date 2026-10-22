@@ -1,0 +1,140 @@
+{
+  "test_split_size": 4529,
+  "models": {
+    "MultinomialNB (Baseline)": {
+      "accuracy": 0.8876,
+      "precision": 0.9343,
+      "recall": 0.928,
+      "f1_score": 0.9312,
+      "roc_auc": 0.9183,
+      "train_time_sec": 0.004,
+      "infer_ms_per_sample": 0.0004,
+      "confusion_matrix": [
+        [
+          578,
+          242
+        ],
+        [
+          267,
+          3442
+        ]
+      ]
+    },
+    "Logistic Regression": {
+      "accuracy": 0.8852,
+      "precision": 0.9173,
+      "recall": 0.945,
+      "f1_score": 0.9309,
+      "roc_auc": 0.9097,
+      "train_time_sec": 0.677,
+      "infer_ms_per_sample": 0.0,
+      "confusion_matrix": [
+        [
+          504,
+          316
+        ],
+        [
+          204,
+          3505
+        ]
+      ]
+    },
+    "Calibrated Linear SVM": {
+      "accuracy": 0.8759,
+      "precision": 0.8892,
+      "recall": 0.9693,
+      "f1_score": 0.9275,
+      "roc_auc": 0.8917,
+      "train_time_sec": 3.737,
+      "infer_ms_per_sample": 0.0011,
+      "confusion_matrix": [
+        [
+          372,
+          448
+        ],
+        [
+          114,
+          3595
+        ]
+      ]
+    }
+  },
+  "error_analysis": {
+    "false_positive_count": 242,
+    "false_negative_count": 267,
+    "representative_false_positives": [
+      {
+        "id": 975,
+        "rating": 5,
+        "department": "Jackets",
+        "predicted_proba": 1.0,
+        "review_snippet": "I bought this jacket in a regular and returned it to the store where they had a petite, it is lovely.  i live in ca so it is perfect for an evening out.... remember not to buy this for warmth but a li..."
+      },
+      {
+        "id": 453,
+        "rating": 2,
+        "department": "Bottoms",
+        "predicted_proba": 1.0,
+        "review_snippet": "I've been wearing these shorts for years, i work outside and it was great to have comfortable jean shorts that were just the perfect length. the fabric quality on these shorts (and many many other ret..."
+      },
+      {
+        "id": 861,
+        "rating": 3,
+        "department": "Tops",
+        "predicted_proba": 1.0,
+        "review_snippet": "I have been looking for a nice white top to go with many of my skirts for summer, and this is not it. like others, it's just so thin and sheer. i live in the south. i don't need my bra showing and i w..."
+      },
+      {
+        "id": 858,
+        "rating": 3,
+        "department": "Tops",
+        "predicted_proba": 1.0,
+        "review_snippet": "I ordered this turtleneck in white and was very surprised to find that the material is so thin and gauzy it's sheer. i will definitely have to wear a white camisole under this every time i wear it, ev..."
+      },
+      {
+        "id": 862,
+        "rating": 3,
+        "department": "Tops",
+        "predicted_proba": 1.0,
+        "review_snippet": "I like this shirt, want to love it. i am keeping this shirt hoping to have better arms by summer when i can where this top with black shorts. this shirt does cling, it's a draping sort of fabric; i lo..."
+      }
+    ],
+    "representative_false_negatives": [
+      {
+        "id": 1095,
+        "rating": 3,
+        "department": "Dresses",
+        "predicted_proba": 0.0,
+        "review_snippet": "I bought this jumpsuit in both fabrics. i adored the fit and feel of both, but sadly, the graphic fabric was not handled well in the construction. three examples: a thin white piece along one leg seam..."
+      },
+      {
+        "id": 820,
+        "rating": 3,
+        "department": "Tops",
+        "predicted_proba": 0.0,
+        "review_snippet": "I really wanted to love this top when i got it, but not so much. it fit nicely through the bust and torso, but flared out way too much, it ended up looking like a maternity top. maybe because i am mor..."
+      },
+      {
+        "id": 1096,
+        "rating": 3,
+        "department": "Dresses",
+        "predicted_proba": 0.0,
+        "review_snippet": "I bought this dress for a fall wedding and upon receiving it was very impressed with the quality of lace and the color. however upon trying it on the seam up the back was slit so high that my undies w..."
+      },
+      {
+        "id": 948,
+        "rating": 5,
+        "department": "Tops",
+        "predicted_proba": 0.0,
+        "review_snippet": "Loved this sweater when i saw it online. when it arrived it had a very strong chemical smell to it and was very stiff textured. despite the dry clean only tag i decided to soak it overnight in woolite..."
+      },
+      {
+        "id": 854,
+        "rating": 4,
+        "department": "Tops",
+        "predicted_proba": 0.0,
+        "review_snippet": "Overall, i thought this was a very pretty blouse. i loved the colors and the design. the construction seemed good. others mentioned that it ran large, but i am tall and often struggle with the shoulde..."
+      }
+    ]
+  }
+}

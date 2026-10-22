@@ -1,0 +1,56 @@
+{
+  "model_name": "TfidfVectorizer + LogisticRegression (Balanced)",
+  "task": "3-Class Sentiment Polarity (Derived from Ratings: Negative 1-2, Neutral 3, Positive 4-5)",
+  "test_accuracy": 0.7671,
+  "f1_macro": 0.5975,
+  "f1_weighted": 0.7881,
+  "class_distribution": {
+    "Negative_1_2": 2370,
+    "Neutral_3": 2823,
+    "Positive_4_5": 17448
+  },
+  "confusion_matrix": {
+    "labels": [
+      "Negative",
+      "Neutral",
+      "Positive"
+    ],
+    "matrix": [
+      [
+        291,
+        153,
+        30
+      ],
+      [
+        182,
+        263,
+        120
+      ],
+      [
+        168,
+        402,
+        2920
+      ]
+    ]
+  },
+  "classification_report": {
+    "Negative": {
+      "precision": 0.454,
+      "recall": 0.6139,
+      "f1_score": 0.522,
+      "support": 474
+    },
+    "Neutral": {
+      "precision": 0.3215,
+      "recall": 0.4655,
+      "f1_score": 0.3803,
+      "support": 565
+    },
+    "Positive": {
+      "precision": 0.9511,
+      "recall": 0.8367,
+      "f1_score": 0.8902,
+      "support": 3490
+    }
+  }
+}
